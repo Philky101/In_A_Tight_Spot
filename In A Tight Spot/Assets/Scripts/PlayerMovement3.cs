@@ -61,11 +61,11 @@ public class PlayerMovement3 : MonoBehaviour
             }
             if (currentNum == partNum)
             {
-                movement.y = (float)-50.4;
+                movement.y = (float)-50.8;
             }
             else if (prevNum == partNum)
             {
-                movement.y += (float)50.4;
+                movement.y += (float)50.8;
             }
         }
 
