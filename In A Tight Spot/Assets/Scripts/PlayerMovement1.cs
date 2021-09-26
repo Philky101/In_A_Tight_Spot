@@ -55,6 +55,10 @@ public class PlayerMovement1 : MonoBehaviour
                     prevNum += 1;
                 }
             }
+            if (prevNum <= 0)
+            {
+                prevNum = 1;
+            }
             if (currentNum == partNum)
             {
                 movement.y += (float)-50.4;
@@ -62,10 +66,6 @@ public class PlayerMovement1 : MonoBehaviour
             else if (prevNum == partNum)
             {
                 movement.y += (float)50.4;
-            }
-            if (prevNum <= 0)
-            {
-                prevNum = 1;
             }
         }
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement2 : MonoBehaviour
+public class PlayerMovement5 : MonoBehaviour
 {
     int partNum;
     int currentNum;
@@ -36,7 +36,7 @@ public class PlayerMovement2 : MonoBehaviour
             movement.x = 0;
         }
 
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("q"))
         {
             if (currentNum == 3)
             {
@@ -61,11 +61,11 @@ public class PlayerMovement2 : MonoBehaviour
             }
             if (currentNum == partNum)
             {
-                movement.y = (float)-50.4;
+                movement.y = (float)-50.8;
             }
             else if (prevNum == partNum)
             {
-                movement.y += (float)50.4;
+                movement.y += (float)50.8;
             }
         }
 
